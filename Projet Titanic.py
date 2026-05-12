@@ -1,10 +1,9 @@
 import csv
-import os
+import os 
 
-#Permet de s'assurer que les fichiers sont écrits dans le même dossier que le code
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
-# Crée la liste de dictionnaires à partir du CSV
+
 liste_p = []
 with open('DM-titanic.csv', mode='r', encoding='utf-8') as f:
     lecteur = csv.DictReader(f)
@@ -12,26 +11,18 @@ with open('DM-titanic.csv', mode='r', encoding='utf-8') as f:
         liste_p.append(dict(ligne))
 
 
-# Nombre total de passagers
 nb_total = len(liste_p)
 
-#Passager 54
 p54 = next(p for p in liste_p if p['PassengerId'] == '54')
 
-# Nombre de victimes
-nb_victimes = len([p for p in liste_p if p['Survived'] == '0'])
-
-# Nombre d'enfants
+nb_victimes = len([p for p in liste_p if p['Survived'] == '0']
+                  
 nb_e = len([p for p in liste_p if p['Age'] != '' and float(p['Age']) < 18])
 
-# Présence de Pierre Marechal
 p_marechal = 'Oui' if any("Marechal, Mr. Pierre" in p['Name'] for p in liste_p) else 'Non'
 
-# Moyenne d'âge des passagers de la première classe
 moy_c1 = sum([float(p['Age']) for p in liste_p if p['Pclass'] == '1' and p['Age'] != '']) / len([p for p in liste_p if p['Pclass'] == '1' and p['Age'] != ''])
-
-
-# Survie par Genres
+                                                                                                 
 h_p = [p for p in liste_p if p['Sex'] == 'male']
 f_p = [p for p in liste_p if p['Sex'] == 'female']
 
