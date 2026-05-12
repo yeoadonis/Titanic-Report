@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="titanic.css">
+</head>
+<body>
+    <div class="box">
+        <h1>Rapport d'Analyse : Titanic</h1>
+        
+        <div class="screenshot-cards">
+            <div class="s-card c-gray"><span>Passagers</span><div>891</div></div>
+            <div class="s-card c-green"><span>Survivants</span><div>342</div></div>
+            <div class="s-card c-red"><span>Victimes</span><div>549</div></div>
+        </div>
+        
+        <div class="dm-details">
+        <h3>Réponses au DM</h3>
+            <p><b>1. Nombre de passagers :</b> 891</p>
+            <p><b>2. Vérification Passager 54 :</b> Faunthorpe, Mrs. Lizzie (Elizabeth Anne Wilkinson), 29 ans, Classe 2, Port S, Survie: Oui</p>
+            <p><b>3. Nombre de victimes :</b> 549</p>
+            <p><b>4. Nombre d'enfants mineurs :</b> 113</p>
+            <p><b>5. Présence de Pierre Marechal :</b> Oui</p>
+            <p><b>6. Moyenne d'âge en 1ère classe :</b> 38.2 ans</p>
+            <p><b>9. Survivants embarqués à Cherbourg :</b> 93</p>
+            <p><b>Plus grande famille :</b> 11 personnes (Famille de Sage, Master. Thomas Henry)</p>
+            <p><b>Passagers voyageant seuls :</b> 537</p>
+            <p><b>Prix du billet le plus cher :</b> 512.33 (£)</p>
+            <p><b>Passager le plus riche :</b> Ward, Miss. Anna</p>
+            <p><b>Prix du billet le moins cher :</b> 0.00 (£)</p>
+            <p><b>Passager le plus pauvre :</b> Leonard, Mr. Lionel</p>
+        </div>
+
+        <h3>Genres</h3>
+        <table>
+            <tr><th>Genre</th><th>Total</th><th>Survivants</th><th>Taux</th></tr>
+            <tr><td>Hommes</td><td>577</td><td>109</td><td class='loss'>18.9%</td></tr><tr><td>Femmes</td><td>314</td><td>233</td><td class='win'>74.2%</td></tr>
+        </table>
+
+        <h3>Classes</h3>
+        <table>
+            <tr><th>Classe</th><th>Total</th><th>Survivants</th><th>Taux</th></tr>
+            <tr><td>C1</td><td>216</td><td>136</td><td class='win'>63.0%</td></tr><tr><td>C2</td><td>184</td><td>87</td><td class='win'>47.3%</td></tr><tr><td>C3</td><td>491</td><td>119</td><td class='loss'>24.2%</td></tr>
+        </table>
+
+        <h3>Ports</h3>
+        <table>
+            <tr><th>Port</th><th>Total</th><th>Survivants</th><th>Taux</th></tr>
+            <tr><td>Cherbourg</td><td>168</td><td>93</td><td class='win'>55.4%</td></tr><tr><td>Queenstown</td><td>77</td><td>30</td><td class='loss'>39.0%</td></tr><tr><td>Southampton</td><td>644</td><td>217</td><td class='loss'>33.7%</td></tr>
+        </table>
+
+        <h3>Âge</h3>
+        <table>
+            <tr><th>Tranche d'âge</th><th>Total</th><th>Survivants</th><th>Taux</th></tr>
+            <tr><td>0-15</td><td>78</td><td>45</td><td class='win'>57.7%</td></tr><tr><td>15-30</td><td>306</td><td>111</td><td class='loss'>36.3%</td></tr><tr><td>30-45</td><td>215</td><td>91</td><td class='loss'>42.3%</td></tr><tr><td>45-60</td><td>89</td><td>36</td><td class='loss'>40.4%</td></tr><tr><td>60-100</td><td>26</td><td>7</td><td class='loss'>26.9%</td></tr>
+        </table>
+
+        <h3>Taux de survie selon la situation familiale</h3>
+        <table>
+            <tr><th>Situation</th><th>Total</th><th>Survivants</th><th>Taux</th></tr>
+            <tr><td>Voyage seul</td><td>537</td><td>163</td><td class='loss'>30.4%</td></tr><tr><td>En famille</td><td>354</td><td>179</td><td class='win'>50.6%</td></tr>
+        </table>
+
+        <h3>Moyenne des tarifs par classe</h3>
+        <table>
+            <tr><th>Classe</th><th>Moyenne du tarif (£)</th></tr>
+            <tr><td>Classe 1</td><td>84.15</td></tr><tr><td>Classe 2</td><td>20.66</td></tr><tr><td>Classe 3</td><td>13.68</td></tr>
+        </table>
+    </div>
+
+    <h3>Analyse du Taux de Survie par Tranche de Prix (5%)</h3>
+        <p style="font-size: 12px; color: #94a3b8;">L'abscisse indique le prix moyen du billet (£), la hauteur indique le % de survie.</p>
+        
+        <div class="graph-container">
+            
+            <div class="bar-wrapper">
+                <div class="bar-value">9.1%</div>
+                <div class="bar" style="height: 9.1%"></div>
+                <div class="bar-label">4.4£</div>
+            </div>
+            
+            <div class="bar-wrapper">
+                <div class="bar-value">18.2%</div>
+                <div class="bar" style="height: 18.2%"></div>
+                <div class="bar-label">7.3£</div>
+            </div>
+            
+            <div class="bar-wrapper">
+                <div class="bar-value">36.4%</div>
+                <div class="bar" style="height: 36.4%"></div>
+                <div class="bar-label">7.7£</div>
+            </div>
+            
+            <div class="bar-wrapper">
+                <div class="bar-value">25.0%</div>
+                <div class="bar" style="height: 25.0%"></div>
+                <div class="bar-label">7.8£</div>
+            </div>
+            
+            <div class="bar-wrapper">
+                <div class="bar-value">11.4%</div>
+                <div class="bar" style="height: 11.4%"></div>
+                <div class="bar-label">7.9£</div>
+            </div>
+            
+            <div class="bar-wrapper">
+                <div class="bar-value">29.5%</div>
+                <div class="bar" style="height: 29.5%"></div>
+                <div class="bar-label">8.0£</div>
+            </div>
+            
+            <div class="bar-wrapper">
+                <div class="bar-value">9.1%</div>
+                <div class="bar" style="height: 9.1%"></div>
+                <div class="bar-label">8.3£</div>
+            </div>
+            
+            <div class="bar-wrapper">
+                <div class="bar-value">22.7%</div>
+                <div class="bar" style="height: 22.7%"></div>
+                <div class="bar-label">9.8£</div>
+            </div>
+            
+            <div class="bar-wrapper">
+                <div class="bar-value">52.3%</div>
+                <div class="bar" style="height: 52.3%"></div>
+                <div class="bar-label">11.8£</div>
+            </div>
+            
+            <div class="bar-wrapper">
+                <div class="bar-value">38.6%</div>
+                <div class="bar" style="height: 38.6%"></div>
+                <div class="bar-label">13.2£</div>
+            </div>
+            
+            <div class="bar-wrapper">
+                <div class="bar-value">36.4%</div>
+                <div class="bar" style="height: 36.4%"></div>
+                <div class="bar-label">15.1£</div>
+            </div>
+            
+            <div class="bar-wrapper">
+                <div class="bar-value">47.7%</div>
+                <div class="bar" style="height: 47.7%"></div>
+                <div class="bar-label">18.6£</div>
+            </div>
+            
+            <div class="bar-wrapper">
+                <div class="bar-value">38.6%</div>
+                <div class="bar" style="height: 38.6%"></div>
+                <div class="bar-label">23.9£</div>
+            </div>
+            
+            <div class="bar-wrapper">
+                <div class="bar-value">61.4%</div>
+                <div class="bar" style="height: 61.4%"></div>
+                <div class="bar-label">26.2£</div>
+            </div>
+            
+            <div class="bar-wrapper">
+                <div class="bar-value">36.4%</div>
+                <div class="bar" style="height: 36.4%"></div>
+                <div class="bar-label">28.4£</div>
+            </div>
+            
+            <div class="bar-wrapper">
+                <div class="bar-value">40.9%</div>
+                <div class="bar" style="height: 40.9%"></div>
+                <div class="bar-label">33.3£</div>
+            </div>
+            
+            <div class="bar-wrapper">
+                <div class="bar-value">38.6%</div>
+                <div class="bar" style="height: 38.6%"></div>
+                <div class="bar-label">46.7£</div>
+            </div>
+            
+            <div class="bar-wrapper">
+                <div class="bar-value">56.8%</div>
+                <div class="bar" style="height: 56.8%"></div>
+                <div class="bar-label">62.6£</div>
+            </div>
+            
+            <div class="bar-wrapper">
+                <div class="bar-value">75.0%</div>
+                <div class="bar" style="height: 75.0%"></div>
+                <div class="bar-label">81.6£</div>
+            </div>
+            
+            <div class="bar-wrapper">
+                <div class="bar-value">74.5%</div>
+                <div class="bar" style="height: 74.5%"></div>
+                <div class="bar-label">183.6£</div>
+            </div>
+            
+        </div>
+
+        <h3>Matrices de Survie Comparées</h3>
+        <div class="tables-row">
+            
+            <div class="table-container">
+                <h4 class="h-title"> Hommes</h4>
+                <table>
+                    <tr><th>Classe</th><th>Âge</th><th>Total</th><th>Survie</th></tr>
+                    <tr><td>Classe 1</td><td>Enfant</td><td>4</td><td class='win'>100.0%</td></tr><tr><td>Classe 1</td><td>Adulte</td><td>97</td><td class='loss'>37.1%</td></tr><tr><td>Classe 2</td><td>Enfant</td><td>11</td><td class='win'>81.8%</td></tr><tr><td>Classe 2</td><td>Adulte</td><td>88</td><td class='loss'>6.8%</td></tr><tr><td>Classe 3</td><td>Enfant</td><td>43</td><td class='loss'>23.3%</td></tr><tr><td>Classe 3</td><td>Adulte</td><td>210</td><td class='loss'>13.3%</td></tr>
+                </table>
+            </div>
+
+            <div class="table-container">
+                <h4 class="f-title">Femmes</h4>
+                <table>
+                    <tr><th>Classe</th><th>Âge</th><th>Total</th><th>Survie</th></tr>
+                    <tr><td>Classe 1</td><td>Enfant</td><td>8</td><td class='win'>87.5%</td></tr><tr><td>Classe 1</td><td>Adulte</td><td>77</td><td class='win'>97.4%</td></tr><tr><td>Classe 2</td><td>Enfant</td><td>12</td><td class='win'>100.0%</td></tr><tr><td>Classe 2</td><td>Adulte</td><td>62</td><td class='win'>90.3%</td></tr><tr><td>Classe 3</td><td>Enfant</td><td>35</td><td class='win'>54.3%</td></tr><tr><td>Classe 3</td><td>Adulte</td><td>67</td><td class='loss'>41.8%</td></tr>
+                </table>
+            </div>
+
+        </div>
+</body>
+</html>
